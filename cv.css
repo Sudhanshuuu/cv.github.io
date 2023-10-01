@@ -1,0 +1,220 @@
+body {
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    width: 50vw;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    overflow-x: hidden;
+}
+
+a{
+    font-size: 0.85rem;
+    font-weight: lighter;
+    text-decoration: none;
+    color:black
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+}
+
+header .profilePic {
+    margin-right: 5%;
+    border-radius: 50%;
+    width: 20vh;
+    height: 20vh;
+
+}
+
+header .introduction {
+    padding: 2% 1.5%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.878);
+    color: white;
+    border-radius: 5px;
+}
+
+header .introduction .name {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    text-decoration: 2px solid white underline;
+}
+
+main {
+    margin-top: 15px;
+    display: flex;
+    overflow-wrap: break-word;
+    width: 100%;
+}
+
+.heading {
+    margin: 2% 0;
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.content>div {
+    font-weight: bold;
+    margin: 2% 0;
+}
+
+.content>div>div:nth-of-type(2) {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 0.75rem;
+
+}
+
+
+.aboutMe {
+    margin-right: 5%;
+    width: 25%;
+    height: 100%;
+}
+
+.aboutMe>div {
+    margin: 15% 0;
+}
+
+.aboutMe .contact div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutMe .contact img {
+    margin: 0 2px;
+    width: 25px;
+}
+
+.aboutMe .contact span {
+    margin: 1%;
+    font-weight: bold;
+    font-size: 1.08rem;
+}
+
+
+.aboutMe .skill .content>span {
+    display: inline-block;
+    margin: 2% 5%;
+    padding: 3% 6%;
+    width: min-content;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.863);
+    border-radius: 10px;
+}
+
+.aboutMe .interests .content>div {
+    width: min-content;
+    margin: 5% 0;
+    padding: 5% 8%;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+.academicInfo {
+    height: 100%;
+    width: 80%;
+}
+
+.academicInfo>div{
+    margin: 5% 0;
+}
+
+.academicInfo .education .content>.degree {
+    font-weight: bold;
+    font-size:1.1rem;
+}
+
+.academicInfo .education .content>.college {
+    font-size: clamp(1rem , 3vw , 1.25rem);
+}
+
+
+.academicInfo .education .content>.admissonDate {
+    font-size: 0.85rem;
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+}
+
+.academicInfo .education content>.branch{
+    font-weight: bold;
+}
+
+.academicInfo .education .content>.branch ul{
+    margin: 0;
+    font-weight: lighter;
+}
+
+
+
+
+@media screen and (max-width : 1000px) {
+    body {
+        padding: 0;
+        width: 100vw;
+        box-shadow: none;
+    }
+
+    header {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    header .profilePic {
+        margin: 0 0 1% 0;
+    }
+
+    header .introduction {
+        text-align: center;
+        background-color: white;
+        color: black;
+    }
+
+    main {
+        margin: 15px auto;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .aboutMe {
+        width: 100%;
+    }
+
+    .aboutMe>div {
+        margin: 5% 0;
+    }
+
+    .aboutMe .contact div {
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .aboutMe .skill .content>span {
+        margin: 1% 2%;
+        padding: 1.5% 3%;
+    }
+
+    .aboutMe .interests .content>div {
+        margin: 1% 0;
+        padding: 1% 2%;
+    }
+
+    .academicInfo{
+        width: 100%;
+    }
+    .academicInfo>div{
+        margin: 10% 0;
+    }
+}
